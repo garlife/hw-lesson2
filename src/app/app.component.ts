@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hw-lesson2';
+
+  colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+  hideRow:string = '';
+
+ 
+  eventStyleChanger(e): void {
+    console.log(e);
+    this.hideRow = 'collapse';
+  }
+
+
 }

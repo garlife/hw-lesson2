@@ -1,0 +1,24 @@
+<p>{{interpolationValue|number: "3.1-4"}}</p>
+<p>{{interpolationPipeValue|uppercase}}</p>
+<p>{{interpolationPipeDateValue}}</p>
+<p>{{interpolationPipeDateValue|date:"dd.MM.yyyy HH:mm:ss"}}</p>
+<p>{{interpolationPipeDateValue|date:"MMM"}}</p>
+<p>{{interpolationPipeDateValue|date:"dd"}}</p>
+<p>{{interpolationPipeDateValue|date:"yy"}}</p>
+<p>{{interpolationPipeDateValue|date:"mm"}}</p>
+<p>{{interpolationPipeDateValue|date:"hh:mm:ss"}}</p>
+<p>{{interpolationPipeDateValue|date:"MMMM"}}</p>
+<p [innerHTML]="dataBindingValue">{{interpolationValue}}</p>
+<p><button (click)="eventBindingHandler($event)">eventBindingClick</button></p>
+<input type="text" [(ngModel)]="paramValue">
+<ul>
+    <li *ngFor="let color of colors" [ngStyle]="{color: color}">{{color}}</li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let color of colors" [style.color]="color">{{color}}</li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let color of colors" style="color:'{{color}}'">{{color}}</li>
+</ul>
