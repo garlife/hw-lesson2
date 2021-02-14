@@ -20,7 +20,7 @@ export class Comp1Component implements OnInit {
   ngOnInit(): void {
   }
 
-  event(e): void {
+  eventBindingHandler(e): void {
     console.log(e);
   }
 

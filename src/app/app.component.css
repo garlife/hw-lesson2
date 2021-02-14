@@ -1,9 +1,14 @@
 table, td {
   border: 1px solid green;
-  background: rgb(255,99,71);
+  /* background: rgb(255,99,71); */
 }
 
 tr.collapse {
   visibility: collapse;
 
 }
+table.collapse {
+  visibility: collapse;
+
+}
+

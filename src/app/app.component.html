@@ -1,37 +1,36 @@
 <h1>The visibility Property</h1>
 
-<table>
-  <tr class={{hideRow}}>
+<table class={{hideTable}}>
+  <tr>
     <th>Rainbow Colors</th>
   </tr>
-  <tr [class]="hideRow">
-    <td>Red</td>
+  <tr>
+    <td style="background-color: {{red}}">{{red}}</td>
   </tr>
-  <tr [class]="hideRow">
-    <td>Orange</td>
+  <tr style="background-color: {{orange}}">
+    <td>{{orange}}</td>
   </tr>
-  <tr [class]="hideRow">
-    <td>Yellow</td>
+  <tr style="background-color: {{yellow}}">
+    <td>{{yellow}}</td>
   </tr>
-  <tr [class]="hideRow">
-    <td>Green</td>
+  <tr [bgColor]="green">
+    <td>{{green}}</td>
   </tr>
-  <tr [class]="hideRow">
-    <td>Blue</td>
+  <tr [bgColor]="blue">
+    <td>{{blue}}</td>
   </tr>
-  <tr [class]="hideRow">
-    <td>Indigo</td>
+  <tr [bgColor]="indigo">
+    <td>{{indigo}}</td>
   </tr>
-  <tr [class]="hideRow">
-    <td>Violet</td>
+  <tr [bgColor]="violet">
+    <td>{{violet}}</td>
   </tr>
-  <hr>
 </table>
-<table>
+<!-- <table>
   <tr *ngFor="let color of colors" [ngStyle]="{color: color}">
-  <td *ngFor="let color of colors" [ngStyle]="{color: color}">{{color.lastIndexOf()}}</td>
+  <td *ngFor="let color of colors" [ngStyle]="{color: color}">{{color}}</td>
   </tr>
-</table>
+</table> -->
 
 <button (click)="eventStyleChanger($event)">Спрятать таблицу</button>
 <!-- <app-mod1></app-mod1> -->
